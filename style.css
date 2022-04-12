@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: #270082;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 66px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('data:image/jpeg;base64,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');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
