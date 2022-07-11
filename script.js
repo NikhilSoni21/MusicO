@@ -107,3 +107,15 @@ document.getElementById('previous').addEventListener('click', ()=>{
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
 })
+
+
+const shareBtn = document.querySelector('.share-btn');
+const shareOptions = document.querySelector('.share-options');
+
+shareBtn.addEventListener('click', () => {
+    shareOptions.classList.toggle('active');
+})
+
+document.getElementById('copy-btn').onclick = function() {
+    navigator.clipboard.writeText(document.getElementById('lin').innerText);
+ }
